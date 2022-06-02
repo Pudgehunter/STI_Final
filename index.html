@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="./img/STI.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de recomendación</title>
+</head>
+
+<body>
+    <form id="myForm">
+        <input type="file" id="csvFile" accept=".csv" />
+        <br />
+        <input type="submit" value="Subir" />
+    </form>
+    <select id="Name1"></select>
+    <input id="KNN" type="number" placeholder="Ingresa el K">
+    <button id="compare">Calcular KNN</button>
+    <p id="result">Selecciona un nombre, ingresa un K y haz click para conocer sus K vecinos más cercanos.</p>
+</body>
+
+<script src="./lb/jquery-3.6.0.js"></script> 
+<script src="./prueba.js"></script>
+
+</html>

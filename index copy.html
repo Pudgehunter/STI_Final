@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="./img/STI.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de recomendación</title>
+</head>
+
+<body>
+    <form id="myForm">
+        <input type="file" id="csvFile" accept=".csv" />
+        <br />
+        <input type="submit" value="Subir" />
+    </form>
+    <h2>Crear prototipos</h2>
+    <input id="KNN_prototype" type="number" placeholder="Ingresa el número para crear el prototipo">
+    <button id="createPrototype">Crear el prototipo (Mean deviation)</button>
+    <button id="createPrototype2">Crear el prototipo (Average)</button>
+    <p></p>
+    <h2>Recomendación de música</h2>
+    <select id="Name1"></select>
+    <input id="KNN" type="number" placeholder="Ingresa el K">
+    <button id="compare">Calcular KNN</button>
+    <p id="result">Selecciona un nombre, ingresa un K y haz click para conocer sus K vecinos más cercanos.</p>
+    <h2>Comparar Música con otro archivo (Videojuegos)</h2>
+    <form id="myForm2">
+        <input type="file" id="csvFile2" accept=".csv" />
+        <br />
+        <input type="submit" value="Subir" />
+    </form>
+    <p></p>
+    <select id="NameMusica"></select>
+    <input id="KNNMusica" type="number" placeholder="Ingresa el K">
+    <button id="compare2">Calcular KNN</button>
+    <p id="resultMusica">Selecciona una música, ingresa un K y haz click para conocer sus K vecinos más cercanos.</p>
+    <!--<button id="clickme">Clickme pruebas</button>-->
+</body>
+
+<script src="./lb/jquery-3.6.0.js"></script> 
+<script src="./index copy.js"></script>
+
+</html>
